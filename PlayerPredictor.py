@@ -56,8 +56,8 @@ class CorrelationVisualizer:
         self.selected_columns = selected_columns
 
     def generate_heatmap(self):
+        # Generate heatmap
         correlation_matrix = self.df.corr()
-
         plt.figure(figsize=(12, 10))
         sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", annot_kws={"size": 10})
         plt.title("Correlation Matrix Heatmap")
@@ -65,6 +65,17 @@ class CorrelationVisualizer:
         return plt.gcf()
     
 class PredictMarketValue:
+    """
+    PredictMarketValue class for predicting player market value using Linear Regression.
+
+    Parameters:
+    - df (pd.DataFrame): Processed DataFrame containing FIFA player data.
+
+    Attributes:
+    - features (list): List of feature column names.
+    - target (str): Target column name.
+    - model (LinearRegression): Linear Regression model.
+    """
     def __init__(self, df):
         self.df = df
         self.features = ['overall', 'potential', 'age', 'league_level', 'international_reputation', 'work_rate']
@@ -72,6 +83,7 @@ class PredictMarketValue:
         self.model = LinearRegression()
         
     def train_model(self):
+        # Train the Linear Regression model and return the model score.
         X = self.df[self.features]
         y = self.df[self.target]
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -81,6 +93,7 @@ class PredictMarketValue:
         return score
     
     def predict_value(self, input_features):
+        # Predict player market value based on input features.
         input_data = [input_features]
         prediction = self.model.predict(input_data)
         prediction_value = round(prediction[0] * 100000000)
