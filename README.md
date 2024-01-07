@@ -9,8 +9,10 @@ This project for Algorithm and Programming class using Python Programming langua
 
 The project is documented in form of a report and a brief demo video that show how the program work.
 
-- Report = https://linktodocumentation](https://docs.google.com/document/d/1hA4Dh4uot1ysXt9aaOdMcwSJn8yDU5yTvhVZdLgCZnA/edit?usp=sharing
-- Video = https://linktodocumentation](https://drive.google.com/file/d/16D6kb6y4t2Vjno1tk_7eQRw7l8NkVWkl/view?usp=sharing
+- Report :
+  https://linktodocumentation](https://docs.google.com/document/d/1hA4Dh4uot1ysXt9aaOdMcwSJn8yDU5yTvhVZdLgCZnA/edit?usp=sharing
+- Video :
+  https://linktodocumentation](https://drive.google.com/file/d/16D6kb6y4t2Vjno1tk_7eQRw7l8NkVWkl/view?usp=sharing
 
 
 ## Running The Program
