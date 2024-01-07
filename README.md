@@ -20,3 +20,7 @@ To run the program, it could be done by downloading all the necesary file in thi
 ```bash
 streamlit run [Directory Path to the app.py]
 ```
+
+If all the code run smoothly then it should show this in your screen :
+
+![Space N = 1000](images/Main.png)
