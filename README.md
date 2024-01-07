@@ -23,4 +23,4 @@ streamlit run [Directory Path to the app.py]
 
 If all the code run smoothly then it should show this in your screen :
 
-![Space N = 1000](images/Main.png)
+![Space N = 1000](images/main.png)
