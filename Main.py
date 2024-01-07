@@ -1,6 +1,5 @@
 from PlayerComparator import PlayerComparator
 import streamlit as st
-import sys
 import pandas as pd
 
 
@@ -30,7 +29,7 @@ radar_chart = None
 # Check if the number of selected players exceeds the maximum allowed
 if len(player_choice) > 3:
     st.warning("Sorry, the maximum number of players to compare is 3 at once.")
-    sys.exit()
+    pass
 else:
     # Separate players based on selected positions
     selected_player_data_list, goalkeepers_selected, outfielders_selected, selected_columns = compare.separate_players(player_choice)
